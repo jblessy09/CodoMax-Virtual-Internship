@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #FFFAFC;
+    color: #393044;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #F4E8EE;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #C06C91;
+    text-decoration: none;
+}
+
+.tagline {
+    color: #918496;
+    font-size: 13px;
+}
+
+.container {
+    width: 90%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.welcome {
+    padding: 55px 0 25px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #C06C91;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(38px, 7vw, 58px);
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+h1 span {
+    color: #D48EAB;
+}
+
+.subtitle {
+    color: #81768A;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.planner-card {
+    background: white;
+    border: 1px solid #F1E4EC;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 12px 35px #D8B7C51A;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #E9DDE8;
+    border-radius: 11px;
+    background: #FFFCFE;
+    color: #393044;
+    font: inherit;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #D48EAB;
+    box-shadow: 0 0 0 3px #F9E7EF;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #D990AE;
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.generate-btn:hover {
+    background: #C47798;
+    transform: translateY(-1px);
+}
+
+.helper {
+    color: #A197A5;
+    font-size: 12px;
+    text-align: center;
+    margin: 18px 0 0;
+}
+
+.results {
+    padding-top: 38px;
+}
+
+.results-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.plan-badge {
+    background: #FCE7F3;
+    color: #A64E78;
+    padding: 9px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.progress-card {
+    padding: 20px;
+    background: #F0EBFF;
+    border-radius: 16px;
+    margin-bottom: 22px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.progress-track {
+    height: 9px;
+    background: white;
+    border-radius: 20px;
+    margin: 14px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background: #A493E6;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+
+#progressMessage {
+    color: #776B96;
+    font-size: 12px;
+    margin: 0;
+}
+
+.day-card {
+    background: white;
+    border: 1px solid #F0E4ED;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 14px;
+}
+
+.day-title {
+    font-size: 16px;
+    margin: 0 0 14px;
+}
+
+.task {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 13px 0;
+    border-top: 1px solid #F6EEF3;
+    cursor: pointer;
+}
+
+.task input {
+    width: 17px;
+    height: 17px;
+    margin: 3px 0 0;
+    accent-color: #C47798;
+    flex-shrink: 0;
+}
+
+.task span {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.task input:checked + span {
+    color: #A69BA8;
+    text-decoration: line-through;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0 30px;
+    border: 1px solid #E8D9E4;
+    background: white;
+    color: #A6537C;
+    border-radius: 12px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #FFF0F6;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 0;
+    color: #A197A5;
+    font-size: 12px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 500px) {
+    .topbar {
+        padding: 18px 5%;
+    }
+
+    .tagline {
+        font-size: 11px;
+    }
+
+    .planner-card {
+        padding: 22px;
+    }
+
+    .results-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

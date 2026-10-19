@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom - AI Task Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a href="#" class="logo">✿ bloom</a>
+        <span class="tagline">A little progress every day</span>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <p class="eyebrow">YOUR PERSONAL PLANNER</p>
+            <h1>Make room for<br><span>what matters.</span></h1>
+            <p class="subtitle">
+                Tell us your goal. We'll help you break it into
+                small, manageable steps.
+            </p>
+        </section>
+
+        <section class="planner-card">
+            <form id="plannerForm">
+                <label for="goal">What do you want to achieve?</label>
+                <input
+                    type="text"
+                    id="goal"
+                    placeholder="e.g. Prepare for my Java exam"
+                    required
+                >
+
+                <label for="days">How many days do you have?</label>
+                <select id="days">
+                    <option value="1">1 day</option>
+                    <option value="3" selected>3 days</option>
+                    <option value="5">5 days</option>
+                    <option value="7">7 days</option>
+                </select>
+
+                <button type="submit" class="generate-btn">
+                    ✨ Create my plan
+                </button>
+            </form>
+            <p class="helper">Small steps. Real progress. One day at a time.</p>
+        </section>
+
+        <section id="results" class="results" hidden>
+            <div class="results-heading">
+                <div>
+                    <p class="eyebrow">YOUR ACTION PLAN</p>
+                    <h2 id="planTitle">Your plan</h2>
+                </div>
+                <span class="plan-badge">✿ Let's do this!</span>
+            </div>
+
+            <div class="progress-card">
+                <div class="progress-info">
+                    <span>Your progress</span>
+                    <strong id="progressText">0%</strong>
+                </div>
+                <div class="progress-track">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <p id="progressMessage">Every small step counts.</p>
+            </div>
+
+            <div id="taskList"></div>
+
+            <button id="resetBtn" class="reset-btn" type="button">
+                Create another plan ↗
+            </button>
+        </section>
+
+        <footer>
+            Made with ♡ and a little planning magic
+        </footer>
+    </main>
+</body>
+</html>
